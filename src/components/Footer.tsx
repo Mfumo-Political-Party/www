@@ -68,13 +68,13 @@ const Footer = () => {
               Follow Us
             </h4>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-300">
+              <a href="#" className="hover:text-gray-300" title="Facebook">
                 <Facebook size={20} className="md:w-6 md:h-6" />
               </a>
-              <a href="#" className="hover:text-gray-300">
+              <a href="#" className="hover:text-gray-300" title="Twitter">
                 <Twitter size={20} className="md:w-6 md:h-6" />
               </a>
-              <a href="#" className="hover:text-gray-300">
+              <a href="#" className="hover:text-gray-300" title="Instagram">
                 <Instagram size={20} className="md:w-6 md:h-6" />
               </a>
             </div>

@@ -1,0 +1,66 @@
+name: Create Files and Directories
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create_files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Authenticate with GitHub CLI
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+
+    - name: Check and create repository if it doesn't exist
+      env:
+        REPO_NAME: ${{ github.repository }}
+      run: |
+        if ! gh repo view $REPO_NAME > /dev/null 2>&1; then
+          gh repo create $REPO_NAME --public --source=. --push
+        fi
+
+    - name: Create necessary directories
+      run: |
+        mkdir -p src  # Creates the src directory
+        mkdir -p .github/workflows  # Creates the workflows directory
+
+    - name: Create main.html file
+      run: |
+        echo "<!DOCTYPE html>" > index.html
+        echo "<html lang='en'>" >> index.html
+        echo "<head>" >> index.html
+        echo "  <meta charset='UTF-8' />" >> index.html
+        echo "  <link rel='icon' type='image/svg+xml' href='/icon.svg' />" >> index.html
+        echo "  <meta name='viewport' content='width=device-width, initial-scale=1.0' />" >> index.html
+        echo "  <meta name='description' content='MFUMO - Building a Better South Africa Through Transparent Governance and Community-Driven Policies' />" >> index.html
+        echo "  <meta name='keywords' content='MFUMO, South Africa, Political Party, Governance, Community, Policies, Leadership' />" >> index.html
+        echo "  <meta name='author' content='MFUMO Political Party' />" >> index.html
+        echo "  <title>MFUMO - Building a Better South Africa</title>" >> index.html
+        echo "</head>" >> index.html
+        echo "<body>" >> index.html
+        echo "  <div id='root'></div>" >> index.html
+        echo "  <script type='module' src='/src/main.tsx'></script>" >> index.html
+        echo "  <noscript>" >> index.html
+        echo "    <div class='no-script-message'>" >> index.html
+        echo "      <h1>JavaScript is required</h1>" >> index.html
+        echo "      <p>Please enable JavaScript to view the MFUMO website.</p>" >> index.html
+        echo "    </div>" >> index.html
+        echo "  </noscript>" >> index.html
+        echo "</body>" >> index.html
+        echo "</html>" >> index.html
+
+    - name: Commit the changes
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add .
+        git commit -m "Add index.html" || echo "No changes to commit"
+        git push || echo "No changes to push"

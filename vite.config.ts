@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
@@ -14,6 +13,14 @@ export default defineConfig({
           'react-vendor': ['react', 'react-dom'],
         },
       },
+    },
+    assetsDir: 'assets',
+    sourcemap: false,
+    manifest: true,
+  },
+  server: {
+    headers: {
+      'Content-Type': 'application/javascript',
     },
   },
 });

@@ -1,3 +1,4 @@
+import React from "react";
 import { Facebook, Twitter, Instagram, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
@@ -68,24 +69,37 @@ const Footer = () => {
               Follow Us
             </h4>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-300" title="Facebook">
+              <a href="#" className="hover:text-gray-300">
                 <Facebook size={20} className="md:w-6 md:h-6" />
               </a>
-              <a href="#" className="hover:text-gray-300" title="Twitter">
+              <a href="#" className="hover:text-gray-300">
                 <Twitter size={20} className="md:w-6 md:h-6" />
               </a>
-              <a href="#" className="hover:text-gray-300" title="Instagram">
+              <a href="#" className="hover:text-gray-300">
                 <Instagram size={20} className="md:w-6 md:h-6" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-gray-700 text-center">
-          <p className="text-sm md:text-base text-gray-300">
-            © {new Date().getFullYear()} Mfumo Political Party. All rights
-            reserved.
-          </p>
+        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-gray-700">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm md:text-base text-gray-300">
+              © {new Date().getFullYear()} Mfumo Political Party. All rights
+              reserved.
+            </p>
+            <p className="text-sm text-gray-300">
+              Website by{" "}
+              <a
+                href="https://www.skunkworksdigital.co.za/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:text-accent-light"
+              >
+                Skunkworks Digital
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

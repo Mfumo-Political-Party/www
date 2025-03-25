@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import React from "react";
 import { Target, Shield, Users } from "lucide-react";
 
@@ -11,9 +12,11 @@ const MissionStatement = () => {
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto mb-6"></div>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            To build an inclusive, prosperous, and just South Africa through
-            ethical leadership, community empowerment, and sustainable
-            development.
+            Our mission is to champion democracy, represent citizens' interests,
+            and drive meaningful progress for a better future. We are committed
+            to fostering positive change, empowering communities, and shaping a
+            fair and inclusive political landscape. Join us in building a
+            transparent, accountable, and prosperous nation for all.
           </p>
         </div>
 
@@ -26,9 +29,12 @@ const MissionStatement = () => {
               Vision
             </h3>
             <p className="text-gray-600 text-center">
-              Creating a South Africa where every citizen has equal
-              opportunities for success and prosperity, supported by transparent
-              and accountable governance.
+              To establish a dynamic platform for governance, leadership
+              development, and electoral participation, empowering citizens in
+              alignment with the Constitution of the Republic of South Africa.
+              Our vision is to lead a nation where every individual has equal
+              opportunities to succeed and prosper, under a transparent,
+              accountable, and people-centered government.
             </p>
           </div>
 

@@ -53,12 +53,12 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail size={16} className="mr-2" />
                 <span className="text-sm md:text-base">
-                  imfumopoliticalparty.org.za
+                  info@mfumopoliticalparty.org.za
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2" />
-                <span className="text-sm md:text-base">+27 123 456 789</span>
+                <span className="text-sm md:text-base">+27 78 174 4701</span>
               </li>
             </ul>
           </div>

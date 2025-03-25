@@ -13,12 +13,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center space-x-3">
-            <img src="" alt="MFUMO Logo" className="w-8 h-8" />
-            <span className="text-white text-2xl font-bold">MFUMO</span>
+            <img src="/favicon.ico" alt="MFUMO Logo" className="w-8 h-8" />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#mission" className="text-white hover:text-gray-200">
+            <a
+              href="#missionstatement"
+              className="text-white hover:text-gray-200"
+            >
               Mission
             </a>
             <a href="#about" className="text-white hover:text-gray-200">

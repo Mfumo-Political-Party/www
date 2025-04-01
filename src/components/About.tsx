@@ -1,4 +1,3 @@
-/* eslint-disable no-irregular-whitespace */
 import React from "react";
 
 const About = () => {
@@ -10,49 +9,93 @@ const About = () => {
             About Us
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto mb-6 md:mb-8"></div>
+          <h3 className="text-xl md:text-2xl font-semibold text-primary mb-6">
+            Building a Stronger South Africa Together
+          </h3>
         </div>
 
-        <div className="mt-8 md:mt-12 max-w-3xl mx-auto text-center">
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed px-4 md:px-0">
-            Building a Stronger South Africa Together Mfumo, meaning
-            "Government" is committed to creating a just, prosperous, and
-            inclusive nation through transparent governance and community-driven
-            policies. We believe in empowering citizens, fostering economic
-            growth, and ensuring equal opportunities for all. As a platform
-            dedicated to leadership, governance, recruitment, electoral
-            participation, and citizen empowerment, we operate in full adherence
-            to the Constitution of the Republic of South Africa. Our goal is to
-            drive meaningful change by advocating for policies that prioritize
-            the needs of the people, promote economic development, and uphold
-            democracy. Join us in shaping a better future for South Africa—one
-            built on integrity, accountability, and progress for all.
-          </p>
+        <div className="mt-8 md:mt-12 max-w-4xl mx-auto">
+          <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 space-y-6">
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+              As a political party, we aim to actively participate in elections
+              across South Africa, with the ambition of securing the support and
+              trust of the majority of South African citizens.
+            </p>
 
-          <div className="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 px-4 md:px-0">
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg md:text-xl font-semibold text-primary mb-2 md:mb-3">
-                Transparency
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                Open and accountable governance at all levels
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+              Mfumo, meaning "Rulership," is committed to creating a prosperous,
+              and inclusive nation through transparent governance and
+              community-driven policies. While believing in advocating for
+              citizens, fostering economic growth, and securing equal
+              opportunities for all. Our platform is dedicated to leadership,
+              governance, recruitment, electoral participation, and citizen
+              empowerment, and we operate in full compliance with the
+              Constitution of the Republic of South Africa.
+            </p>
+
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+              To achieve our goals, we rely on the active participation and
+              contributions of our members. Your involvement, whether through
+              voting, volunteering, or financial backing, is crucial to our
+              success. We seek the support of individuals who are committed to
+              shaping a better future and driving the change South Africa needs.
+            </p>
+
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+              Join us in building a better South Africa—one grounded in
+              integrity, accountability, and progress for all. Together, we can
+              create a nation that reflects the hopes and aspirations of all its
+              people.
+            </p>
+
+            <div className="mt-8 flex justify-center">
+              <button className="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-md text-lg font-medium transition duration-300 flex items-center gap-2">
+                Join Our Movement
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <h4 className="text-lg font-semibold text-primary mb-3">
+                Our Vision
+              </h4>
+              <p className="text-gray-600">
+                A united, prosperous South Africa where every citizen has the
+                opportunity to thrive and contribute to our collective success.
               </p>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg md:text-xl font-semibold text-primary mb-2 md:mb-3">
-                Community
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                Policies driven by the needs of our people
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <h4 className="text-lg font-semibold text-primary mb-3">
+                Our Approach
+              </h4>
+              <p className="text-gray-600">
+                Transparent governance, community engagement, and sustainable
+                development for lasting positive change.
               </p>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-lg md:text-xl font-semibold text-primary mb-2 md:mb-3">
-                Progress
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                Sustainable development for future generations
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <h4 className="text-lg font-semibold text-primary mb-3">
+                Our Promise
+              </h4>
+              <p className="text-gray-600">
+                Dedicated service to all South Africans through ethical
+                leadership and inclusive policies.
               </p>
             </div>
           </div>
